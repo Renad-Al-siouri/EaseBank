@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+
+/*Primary*/
+--DarkBlue: hsl(233, 26%, 24%);
+--LimeGreen: hsl(136, 65%, 51%);
+--BrightCyan: hsl(192, 70%, 51%);
+
+
+/* Neutral*/
+--GrayishBlue: hsl(233, 8%, 62%);
+--LightGrayishBlue: hsl(220, 16%, 96%);
+--VeryLightGray: hsl(0, 0%, 98%);
+--White: hsl(0, 0%, 100%);
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    Font-size: 18px;
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+h1,h2.h3,h4,h5,h6{
+    Font-size: 18px;
+    font-family: "Poppins", serif;
+    font-style: normal;
+
+}
+/*===========
+   header-nav
+  ==========*/   
+nav{
+width: 100%;
+background-color:var(--White) ;
+display: flex;
+justify-content: space-between;
+}
+
+.logo , .link , .button{
+    margin: 30px 150px;
+    
+}
+
+.logo img{
+    margin-top: 10px;
+}
+.link a{
+   margin:1px 10px;
+   text-decoration: none;
+   color: var(--GrayishBlue);
+}
+
+.btn {
+    border-radius: 30px;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    color: var(--White);
+    background-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%)); 
+}
+
+
+/*==================
+intro section
+===================*/
+
+section{
+    
+    width: 100%;
+    background-color: var(--VeryLightGray);
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+.content{
+    margin: 200px 0px 30px 150px;
+    
+}
+section h1 {
+    color: var(--DarkBlue);
+    margin: 30px 10px;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+section p{
+    margin: 30px 10px ;
+    font-weight: 400;
+    color: var(--GrayishBlue);
+}
+
+section .button{ margin: 30px ;
+}
+
+section .image {
+    background-image: url(bg-intro-desktop.svg);
+   
+    
+}
+section .image img{
+  width: 100%;
+   margin-right: 20px;
+}
+
+/*==============
+  section 2
+  ==============*/
+.section2{
+    width: 100%;
+    background-color: var(--LightGrayishBlue);
+    border: 1px solid var(--LightGrayishBlue);
+}
+.section2 .content{
+    margin: 100px 0px 30px 150px;
+}
+
+.section2 h2 {
+    color: var(--DarkBlue);
+    margin: 30px 10px;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.section2 p{
+    margin: 30px 10px ;
+    font-weight: 400;
+    color: var(--GrayishBlue);
+}
+
+.service{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.card img{
+    width: 25%;
+}
+
+.card h3 {
+    color: var(--DarkBlue);
+    font-size: 1.5em;
+    font-weight: 400;
+    
+}
+
+/*=================
+last section
+===============*/
+.section3{
+    width: 100%;
+    background-color: var(--VeryLightGray);
+    border: 1px solid var(--VeryLightGray);
+}
+.content h2 {
+    color: var(--DarkBlue);
+    margin: 0px 10px 50px 0px;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+.last-section{
+    display: grid;
+    grid-template-columns: repeat(4,360px);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.last{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--White);
+}
+.last img{
+    width: 360px;
+    height: 360px;
+    border-radius: 10px;
+}
+
+.last h6{
+    color: var(--GrayishBlue);
+    font-size: .7em;
+    font-weight: 300;
+    padding: 0px 20px;
+}
+.last h3{
+    color: var(--DarkBlue);
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.last p{
+    margin: 10px 20px ;
+    font-weight: 400;
+    color: var(--GrayishBlue);
+}
+/*==========
+footer
+============*/
+
+footer{
+    width: 100%;
+    background-color: var(--DarkBlue);
+    display: flex;
+
+}
+footer .media{
+    width: 50%;
+    display: flex;
+    justify-content:space-around ;
+    padding: 30px 150px;
+}
+.about{
+   margin: 30px 100px;
+}
+.about ul li{
+    list-style: none;
+    
+}
+.about a{
+    text-decoration: none;
+    color: var(--White);
+}
