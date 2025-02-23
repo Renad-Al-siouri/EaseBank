@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./cssfile/style.css">
+    <link rel="stylesheet" href="cssfile/style.css">
     <link rel="icon"  href="./images/favicon-32x32.png">
     <title>Ease Bank</title>
 </head>
@@ -12,18 +12,22 @@
     <nav>
         <!--logo-->
         <div class="logo"><img src="images/logo.svg"></div>
-
-        <!--link-->
-        <div class="link">
-            <a href=""> Home</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-            <a href="">Blog</a>
-            <a href="">Careers</a>
+        
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <img src="images/icon-hamburger.svg" alt="Menu">
         </div>
-        <!--button-->
-        <div class="button"><input type="button" value="Request Invite" class="btn"></div>
+
+        <div class="link">
+            <div class="close-btn" onclick="toggleMenu()">&times;</div> 
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <div class="button"><input type="button" value="Request Invite" class="btn"></div>
+        </div>
     </nav>
+    
 
     <!--intro section-->
     <section>
@@ -129,6 +133,7 @@
                   </p>
           </div>
     </div>
+    </div>
 <!--footer-->
 <footer>
    <div>
@@ -156,10 +161,16 @@
         <li> <a href="">Support</a></li>
         <li><a href="">Privacy Policy</a></li>
     </ul>
-        
-    
+
 
     </div>
+    <div class="end">
+        <div class="button"><input type="button" value="Request Invite" class="btn"></div>
+        <p>© Easybank. All Rights Reserved</p>
+    </div>
+   
+
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
